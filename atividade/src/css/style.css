@@ -2,8 +2,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-
-
 button {
   cursor: pointer;
   margin-top: 0.8rem;
@@ -34,7 +32,8 @@ input {
 }
 
 .formSave {
-  background-color: rgb(158, 206, 158);
+  border: 2px solid #9ece9e;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   width: 400px;
@@ -42,7 +41,8 @@ input {
 }
 
 .formList {
-  background-color: rgb(214, 211, 162);
+  border: 2px solid #d6d3a2;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   width: 400px;
@@ -50,7 +50,8 @@ input {
 }
 
 .formUpdate {
-  background-color: rgb(214, 162, 162);
+  border: 2px solid #d6a2a2;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   width: 400px;
@@ -58,12 +59,12 @@ input {
 }
 
 .formDelete {
-  background-color: brown;
+  border: 2px solid #a52a2a;
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   width: 400px;
   padding: 2rem;
-
 }
 
 .form {
@@ -74,5 +75,5 @@ input {
 
 .logradouro, .bairro, .cidade,
 .logradouroUpdate, .bairroUpdate, .cidadeUpdate {
-  background-color: #ddd;
+  background-color: #ccc;
 }
