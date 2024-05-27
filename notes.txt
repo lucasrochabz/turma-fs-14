@@ -1,0 +1,8 @@
+verde escuro
+#1e3932
+
+branco
+#ffffff
+
+cinza
+#f2f0eb

@@ -1,0 +1,6 @@
+@import url('../src/style-base.css');
+
+.resultado-a, .resultado-b {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}

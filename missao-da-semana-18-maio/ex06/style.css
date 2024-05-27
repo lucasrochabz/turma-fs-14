@@ -1,0 +1,7 @@
+@import url('../src/style-base.css');
+
+.resposta {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 2rem;
+}

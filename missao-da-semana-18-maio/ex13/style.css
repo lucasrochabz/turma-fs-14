@@ -1,0 +1,9 @@
+@import url('../src/style-base.css');
+
+select {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  padding: 0.4rem;
+  border-radius: 5px;
+  border: 1px solid;
+}
