@@ -31,7 +31,11 @@ a {
   color: #fff;
   display: flex;
   height: calc(100vh - 76px);
-  width: 250px;
+  width: 255px;
+}
+
+.menu-header {
+  padding: 0 1rem;
 }
 
 .menu-header::after {
@@ -42,29 +46,28 @@ a {
   font-weight: bold;
 }
 
-.menu-header {
-  margin-left: 1rem;
-}
-
 .menu-header:hover {
   cursor: pointer;
 }
 
 .menu-list {
-  display: block;
-  margin-left: 2rem;
   display: flex;
+  padding: 0 2rem;
   flex-direction: column;
-  gap: 0.8rem;
+  gap: 0.4rem;
   margin-top: 0.8rem;
 }
 
 .menu-list a {
   color: #fff;
+  display: block;
+  border: 1px solid transparent;
+  padding: 0.4rem;
 }
 
 .menu-list a:hover {
-  text-decoration: underline;
+  border: 1px solid #fff;
+
 }
 
 .menu-list.show-list {
