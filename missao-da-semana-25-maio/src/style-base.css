@@ -47,7 +47,6 @@ input {
   background-color: #000;
   color: #fff;
   display: flex;
-  height: calc(100vh - 76px);
   width: 250px;
 }
 
@@ -89,8 +88,6 @@ input {
 }
 
 .task {
-  width: 50%;
-  height: 100%;
   border: 1px solid #000;
   overflow: hidden;
   border-radius: 10px;
@@ -101,7 +98,7 @@ input {
 
 .task-header {
   display: flex;
-  background-color: #a543fa;
+  background-color: #000;
   color: #f7f7f7;
   padding: 1rem;
 }
@@ -130,7 +127,7 @@ input {
 }
 
 button {
-  background-color: #ff5959;
+  background-color: chocolate;
   border: none;
   padding: 0.8rem 0.8rem;
   border-radius: 5px;

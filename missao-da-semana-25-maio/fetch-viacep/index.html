@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./style.css">
-  <title>Calculador de Média Escolar</title>
+  <link rel="stylesheet" href="./src/css/style.css">
+  <title>Atividade</title>
 </head>
 
 <body>
@@ -13,56 +13,117 @@
     <h2><a href="../../index.html">Turma FS-14</a></h2>
   </header>
 
+
+
   <main class="main">
     <aside class="container">
       <div class="menu-item">
-        <div class="menu-header" id="menu-header">Missão da semana: 18/maio</div>
+        <div class="menu-header" id="menu-header">Missão da semana: 25/maio</div>
         <ul class="menu-list" id="menu-list">
-          <li><a href="./">Exercício 6</a></li>
-          <li><a href="../ex07/index.html">Exercício 7</a></li>
-          <li><a href="../ex08/index.html">Exercício 8</a></li>
-          <li><a href="../ex09/index.html">Exercício 9</a></li>
-          <li><a href="../ex10/index.html">Exercício 10</a></li>
-          <li><a href="../ex11/index.html">Exercício 11</a></li>
-          <li><a href="../ex12/index.html">Exercício 12</a></li>
-          <li><a href="../ex13/index.html">Exercício 13</a></li>
+          <li><a href="./">Fetch ViaCEP</a></li>
         </ul>
       </div>
     </aside>
 
-    <section class="task">
-      <div class="task-header">
-        <span>6)</span>
-        <p>
-          Escrever um algoritmo que leia o nome de um aluno e as notas das três provas que ele obteve no semestre. No final informar o nome do aluno e a sua média (aritmética).
-        </p>
-      </div>
-
-
-      <div class="task-body">
-        <div class="form">
-          <label for="nome">Nome</label>
-          <input type="text" class="nome" id="nome" placeholder="Insira o nome">
-
-          <label for="primeira">Primeira Prova</label>
-          <input type="number" class="primeira" id="primeira" placeholder="Primeira nota">
-
-          <label for="segunda">Segunda Prova</label>
-          <input type="number" class="segunda" id="segunda" placeholder="Segunda nota">
-
-          <label for="terceira">Terceira Prova</label>
-          <input type="number" class="terceira" id="terceira" placeholder="Terceira nota">
-
-          <button class="btnCalcular" id="btnCalcular">Calcular</button>
+    <section class="content">
+      <section class="task">
+        <div class="task-header">
+          <span>1)</span>
+          <p>Salvar</p>
         </div>
 
-        <div class="resposta" id="resposta"></div>
-      </div>
+        <div class="task-body">
+          <div class="formSave">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome">
 
+            <label for="cep">CEP</label>
+            <input type="text" name="cep" id="cep">
+
+            <label for="logradouro">Logradouro</label>
+            <input type="text" name="logradouro" id="logradouro" class="logradouro" readonly>
+
+            <label for="numero">Número</label>
+            <input type="text" name="numero" id="numero">
+
+            <label for="bairro">Bairro</label>
+            <input type="text" name="bairro" id="bairro" class="bairro" readonly>
+
+            <label for="cidade">Cidade</label>
+            <input type="text" name="cidade" id="cidade" class="cidade" readonly>
+
+            <button id="salvar">Salvar [POST]</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="task">
+        <div class="task-header">
+          <span>2)</span>
+          <p>Listar</p>
+        </div>
+
+        <div class="task-body">
+          <div class="formList">
+            <button id="listar">Listar [GET]</button>
+            <div class="lista" id="lista"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="task">
+        <div class="task-header">
+          <span>3)</span>
+          <p>Atualizar</p>
+        </div>
+
+        <div class="task-body">
+          <div class="formUpdate">
+            <label for="nomeBusca">Pesquisar</label>
+            <input type="text" id="nomeBusca" placeholder="Nome para buscar">
+
+            <label for="nomeUpdate">Nome</label>
+            <input type="text" id="nomeUpdate" placeholder="Nome">
+
+            <label for="cepUpdate">CEP</label>
+            <input type="text" id="cepUpdate" placeholder="CEP">
+
+            <label for="logradouroUpdate">Logradouro</label>
+            <input type="text" id="logradouroUpdate" class="logradouroUpdate" placeholder="Logradouro" readonly>
+
+            <label for="numeroUpdate">Número</label>
+            <input type="text" id="numeroUpdate" placeholder="Número">
+
+            <label for="bairroUpdate">Bairro</label>
+            <input type="text" id="bairroUpdate" class="bairroUpdate" placeholder="Bairro" readonly>
+
+            <label for="cidadeUpdate">Cidade</label>
+            <input type="text" id="cidadeUpdate" class="cidadeUpdate" placeholder="Cidade" readonly>
+
+            <button id="atualizar">Atualizar [PUT]</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="task">
+        <div class="task-header">
+          <span>4)</span>
+          <p>Deletar</p>
+        </div>
+
+        <div class="task-body">
+          <div class="formDelete">
+            <p>deletar</p>
+            <p>escolher pelo nome qual pessoa eu quero deletar</p>
+            <button id="excluir">Excluir [DELETE]</button>
+          </div>
+        </div>
+      </section>
     </section>
+
   </main>
 
-  <script src="./script.js"></script>
+  <script type="module" src="./src/js/script.js"></script>
 </body>
 
 </html>
